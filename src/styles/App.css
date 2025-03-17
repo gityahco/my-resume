@@ -1,0 +1,172 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&family=Roboto&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Layout and Container Styles */
+.app-container {
+  display: flex;
+  position: relative;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 1.5em;
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  border-bottom: 2px solid #0073b1;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.job,
+.school {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+/* Contact Info Styles */
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.contact-info a:hover {
+  opacity: 0.7;
+}
+
+/* Download Button Styles */
+.download-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .resume-container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download-btn {
+    display: none; /* Hide the download button in the PDF */
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+/* Project Link Styles */
+.project-link {
+  color: #0073b1; /* Change to your preferred color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3; /* Darker shade for hover */
+  text-decoration: underline;
+}
+
+.link-icon {
+  margin-left: 5px;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+.reference a {
+  transition: opacity 0.3s ease;
+}
+
+.reference a:hover {
+  opacity: 0.7;
+}
